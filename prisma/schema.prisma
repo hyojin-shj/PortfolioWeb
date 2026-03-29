@@ -13,7 +13,7 @@ model Project {
   objective       String
   content         String
   role            String
-  techStack       String   // Comma-separated or JSON
+  techStack       String
   troubleshooting String
   solution        String
   achievements    String
@@ -27,12 +27,12 @@ model Project {
 }
 
 model AboutMe {
-  id              Int      @id @default(autoincrement())
-  name            String
-  emails          String   @default("[]")
-  snsLinks        String   @default("[]")
-  educations      String   @default("[]")
-  certifications  String   @default("[]")
-  careers         String   @default("[]")
-  updatedAt       DateTime @updatedAt
+  id             Int      @id @default(autoincrement())
+  name           String
+  emails         String   @default("[]")
+  snsLinks       String   @default("[]")
+  educations     String   @default("[]")
+  certifications String   @default("[]")
+  careers        String   @default("[]")
+  updatedAt      DateTime @updatedAt
 }
